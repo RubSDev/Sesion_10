@@ -1,0 +1,67 @@
+$bg-white: #ffffff;
+$font-title: "Arial", sans-serif;
+
+@mixin buttonRed {
+  font-size: 1rem;
+  background-color: red;
+  color: $bg-white;
+  border: none;
+  padding: 1rem;
+}
+button {
+  @include buttonRed;
+}
+body {
+  width: 100%;
+  margin: 0;
+  font-family: $font-title;
+
+  header {
+    height: 800px;
+    background-image: url("/assets/netflix-background.jpeg");
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5) 100%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url("/assets/netflix-background.jpeg");
+    color: $bg-white;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 5rem;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        width: 50%;
+        margin: 0;
+      }
+      h2 {
+        font-weight: lighter;
+      }
+      div {
+        display: flex;
+
+        input {
+          width: 300px;
+          padding-left: 1rem;
+        }
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      position: sticky;
+      padding: 2rem;
+
+      img {
+        width: 10%;
+      }
+    }
+  }
+}

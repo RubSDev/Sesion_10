@@ -1,0 +1,78 @@
+button {
+  font-size: 1rem;
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body header {
+  height: 800px;
+  background-image: url("/assets/netflix-background.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/assets/netflix-background.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("/assets/netflix-background.jpeg");
+  color: #ffffff;
+}
+
+body header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+body header section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  width: 50%;
+  margin: 0;
+}
+
+body header section h2 {
+  font-weight: lighter;
+}
+
+body header section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header section div input {
+  width: 300px;
+  padding-left: 1rem;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 2rem;
+}
+
+body header nav img {
+  width: 10%;
+}
+/*# sourceMappingURL=styles.css.map */
